@@ -1,8 +1,8 @@
 import kr.entree.spigradle.kotlin.*
+import kr.entree.spigradle.data.Load
 
 plugins {
   id("java")
-  application
 
   id("kr.entree.spigradle") version "2.4.3"
 
@@ -27,10 +27,9 @@ java {
   sourceCompatibility = JavaVersion.VERSION_17
 }
 
-application {
-  mainClass = "dev.lavendersystems.plugintemplate.PluginTemplate"
-}
-
 spigot {
-  authors = listOf("Zagdrath")
+  description = "Plugin temlate for Lavender Studios."
+  authors = listOf("Lavender Studios")
+  apiVersion = "1.20.4"
+  load = Load.STARTUP
 }
